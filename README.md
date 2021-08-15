@@ -32,7 +32,7 @@ spring项目中都使用的是Jackson为默认的序列化方式，但是不免�
 `null值自定义序列化器`：
 拦截所有值为null的字段进入自定义序列化器，然后根据`自定义注解`配置进行不同的序列化写值
 
-### 部分实现
+## 部分实现
 1. 自定义注解 `@NeedNotNull`
 
 ```java
@@ -532,3 +532,8 @@ public class Test {
 此外，个人觉得在spring项目中还是使用Jackson作为序列化方式比较好，因为这是官方默认的方式，fastjson可以使用，但仅限于代码中做某些json转换（毕竟静态调用还是比较香的）。
 
 我是Tophua，欢迎交流
+
+
+## 附上源码
+GitHub：https://github.com/TopSkyhua/default-v-demo
+Gitee：https://gitee.com/TopSkyhua/default-v-demo.git
